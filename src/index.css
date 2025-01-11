@@ -1,13 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.swiper-button-prev .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0); /* 버튼 배경 색상 */
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white; /* 화살표 색상 */
+}
+
+.swiper {
+  --swiper-theme-color: white;
+  --swiper-navigation-color: white;
+  --swiper-navigation-size: 16px;
+  --swiper-pagination-color: #fcc1c3;
+  --swiper-pagination-bottom: 4px;
+  --swiper-pagination-progressbar-bg-color: #ffd6d7;
+  --swiper-pagination-progressbar-size: 6px;
 }
