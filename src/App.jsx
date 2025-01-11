@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/">
+    <Router basename="/wedding-invitation">
       <Routes>
         <Route path="/" element={<Wedding />} />
       </Routes>

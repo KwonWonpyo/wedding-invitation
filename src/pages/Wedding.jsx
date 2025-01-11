@@ -60,14 +60,14 @@ function Wedding() {
         <HomeSection showDetail={isVIP}/>
         <Header isVIP={isVIP}/>
         <main className="flex-1 no-scrollbar">
-          <section id="bride-and-groom" className="w-full py-12 bg-white flex flex-col items-center">
-            <div className="border border-b-gray-600 w-4/5 max-w-[1200px] h-1" />
-            <BrideAndGroom />
-          </section>
           <section id="infomation" className="flex flex-col py-10 bg-[#f9f8f6] items-center justify-center">
             <div className="border border-b-gray-600 w-4/5 max-w-[1200px] h-1" />
             <Information isVIP={isVIP} />
             <div className="border border-t-gray-600 w-4/5 max-w-[1200px] h-1" />
+          </section>
+          <section id="bride-and-groom" className="w-full py-12 bg-white flex flex-col items-center">
+            <div className="border border-b-gray-600 w-4/5 max-w-[1200px] h-1" />
+            <BrideAndGroom />
           </section>
           <section id="gallery" className="h-screen bg-white flex flex-col items-center justify-center">
             <Gallery />
