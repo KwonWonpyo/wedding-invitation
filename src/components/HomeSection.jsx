@@ -1,14 +1,18 @@
 import React from "react";
 
-const HomeSection = (showTime, showPlace) => {
-  showTime = true;
-  showPlace = true;
+const HomeSection = ({showDetail}) => {
+  const showTime = true;
+  const showPlace = showDetail;
+
+  const backgroundStyle = {
+    backgroundImage: 'url(' + `${process.env.PUBLIC_URL}/images/photos/4_12.jpg` + ')',
+  }
   
   return (
     <section
       id="home"
       className="w-full h-screen bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/4_12.jpg')" }}
+      style={backgroundStyle}
     >
       <div
         className="text-center text-white p-4 bg-transparent h-2/3 md:h-auto"

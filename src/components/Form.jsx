@@ -4,7 +4,7 @@ function Form() {
       <h2 className="mb-10 mt-5 md:m-14 text-3xl md:text-4xl font-noto-serif">참석하기</h2>
       <div>
         <p className="mb-8 text-sm md:text-xl font-bold font-nanum-human text-gray-500">
-          원활한 자리 배정을 위해 <br /> 참석 여부를 알려주세요.
+          원활한 자리 배정을 위해 <br /> 참석 여부를 알려주세요
         </p>
         <a
           href="https://forms.gle/rYhbp5uZBnmHxjuE8"

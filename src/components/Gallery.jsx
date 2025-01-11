@@ -7,21 +7,21 @@ import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 
 const images = [
-  "/images/photos/4_5.jpg",
-  "/images/photos/1_6.jpg",
-  "/images/photos/1_5.jpg",
-  "/images/photos/1_8.jpg",
-  "/images/photos/2_1.jpg",
-  "/images/photos/3_1.jpg",
-  "/images/photos/3_2.jpg",
-  "/images/photos/3_4.jpg",
-  "/images/photos/3_5.jpg",
-  "/images/photos/4_2.jpg",
-  "/images/photos/4_3.jpg",
-  "/images/photos/4_6.jpg",
-  "/images/photos/1_1.jpg",
-  "/images/photos/4_8.jpg",
-  "/images/photos/4_10.jpg",
+  `${process.env.PUBLIC_URL}/images/photos/4_5.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/1_6.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/1_5.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/1_8.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/2_1.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/3_1.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/3_2.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/3_4.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/3_5.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/4_2.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/4_3.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/4_6.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/1_1.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/4_8.jpg`,
+  `${process.env.PUBLIC_URL}/images/photos/4_10.jpg`,
 ];
 
 function Gallery() {

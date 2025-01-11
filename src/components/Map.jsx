@@ -52,13 +52,13 @@ function Map() {
       </div>
       <div className="my-3 flex flex-row gap-3 justify-center">
         <a href="https://naver.me/xX75acfs">
-          <img alt="naver-map" className="w-12" id="naver-map" src="images/map/naver-map.png" />
+          <img alt="naver-map" className="w-12" id="naver-map" src={`${process.env.PUBLIC_URL}/images/map/naver-map.png`} />
         </a>
         <a href="https://place.map.kakao.com/1290739532">
-          <img alt="kakao-map" className="w-12" id="kakao-map" src="images/map/kakao-map.png" />
+          <img alt="kakao-map" className="w-12" id="kakao-map" src={`${process.env.PUBLIC_URL}/images/map/kakao-map.png`} />
         </a>
         <a href="https://maps.app.goo.gl/27fa7U1gZAXSYSJE8">
-          <img alt="google-map" className="w-12" id="google-map" src="images/map/google-map.png" />
+          <img alt="google-map" className="w-12" id="google-map" src={`${process.env.PUBLIC_URL}/images/map/google-map.png`} />
         </a>
       </div>
       <div className="mx-auto my-5 flex flex-col justify-center w-72 md:w-3/4 text-left font-nanum-human text-gray-500">

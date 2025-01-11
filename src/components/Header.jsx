@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-function Header() {
+function Header({ isVIP }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -38,12 +38,16 @@ function Header() {
           <button onClick={() => handleScroll("gallery")} className="hover:text-pink-400">
             GALLERY
           </button>
-          <button onClick={() => handleScroll("directions")} className="hover:text-pink-400">
-            MAP
-          </button>
-          <button onClick={() => handleScroll("guestbook")} className="hover:text-pink-400">
-            REPLY
-          </button>
+          {isVIP && (
+            <>
+              <button onClick={() => handleScroll("directions")} className="hover:text-pink-400">
+                MAP
+              </button>
+              <button onClick={() => handleScroll("guestbook")} className="hover:text-pink-400">
+                REPLY
+              </button>
+            </>
+          )}
         </nav>
       </div>
 
@@ -71,12 +75,14 @@ function Header() {
           <button onClick={() => handleScroll("gallery")} className="hover:text-pink-400">
             갤러리
           </button>
-          <button onClick={() => handleScroll("directions")} className="hover:text-pink-400">
-            오시는길
-          </button>
-          <button onClick={() => handleScroll("guestbook")} className="hover:text-pink-400">
-            참석하기
-          </button>
+          {isVIP && (<>
+            <button onClick={() => handleScroll("directions")} className="hover:text-pink-400">
+              오시는길
+            </button>
+            <button onClick={() => handleScroll("guestbook")} className="hover:text-pink-400">
+              참석하기
+            </button>
+          </>)}
         </nav>
       )}
     </header>

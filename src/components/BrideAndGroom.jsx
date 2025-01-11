@@ -7,7 +7,7 @@ function BrideAndGroom() {
         {/* 신부 이미지 */}
         <div className="flex flex-col items-center">
           <img
-            src="images/photos/1_3.jpg"
+            src={`${process.env.PUBLIC_URL}/images/photos/1_3.jpg`}
             alt="Bride"
             className="w-[540px] h-auto object-cover shadow-md"
           />
@@ -17,7 +17,7 @@ function BrideAndGroom() {
         {/* 신랑 이미지 */}
         <div className="flex flex-col items-center">
           <img
-            src="images/photos/3_3.jpg"
+            src={`${process.env.PUBLIC_URL}/images/photos/3_3.jpg`}
             alt="Groom"
             className="w-[540px] h-auto object-cover shadow-md"
           />
